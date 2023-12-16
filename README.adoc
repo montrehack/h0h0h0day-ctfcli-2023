@@ -1,0 +1,16 @@
+= README
+
+sync to challenge server (separate from ctfd)
+
+    rsync -Ptr --perms -F -e 'ssh -i <key>' ./ root@<ip>:/srv/h0h0h0day/
+
+connect to the server, start challenges
+
+    ansible-ssh -i ansible/terraform.py challenge-server
+    byobu
+    cd /srv/h0h0h0day/
+    ./start-all.sh
+
+== CTFd
+
+Use ctfcli
