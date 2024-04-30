@@ -1,0 +1,31 @@
+name: "The Box (level0)"
+author: "J3romee"
+category: privesc
+description: |
+    This is the first level of `The Box`.
+    Connect to the box via ssh at `level0@box1.j3romee.com` with the password `g00dLuck_h@ve_fun`
+
+    Your goal is to find a way to get access the next user (`level1`) and privesc your way up to the last level.
+
+    The challenge is separated in multiple parts on this website but everything run on the same box.
+    Your end goal is to collect all the flags reach the last level.
+
+    /!\ There is no bruteforcing involved in this challenge. There is always a way to get to the next level /!\
+
+    You don't necessarly need to do all the level sequentially ;)
+value: 1
+type: standard
+
+flags:
+    - FLAG{f289cc7d7dfe61d651e809394}
+
+hints:
+    - Explore the file system !
+    - Maybe there is a hidden file somewhere ?
+
+tags:
+    - linux
+    - privesc
+    - easy
+
+version: "0.1"

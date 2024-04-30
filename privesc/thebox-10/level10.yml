@@ -1,0 +1,22 @@
+name: "The Box (level10)"
+author: "J3romee"
+category: privesc
+description: |
+    Well done ! You've reached the last level of `The Box`.
+
+    Don't hesitate to send me a message @j3romee on discord with any feedback.
+    What did you like? What did you hate ?
+    
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - 3ab653c5a1516b3b64e0f224f
+
+tags:
+    - linux
+    - privesc
+
+version: "0.1"

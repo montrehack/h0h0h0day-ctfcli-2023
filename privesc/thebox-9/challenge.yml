@@ -1,0 +1,27 @@
+name: "The Box (level9)"
+author: "J3romee"
+category: privesc
+description: |
+    This is level9 of `The Box`.
+    Connect to the box via ssh at `level9@box1.j3romee.com` using the flag you found in the last level as password.
+
+    Your goal is to find a way to get access the next user (`level10`)
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - FLAG{cfde3e342ac38e5e791df93a8}
+
+hints:
+    - "Have a look at the `strings` command"
+    - If you can't find the flag directly, maybe there is another piece of information that can be gathered from the binary to get the flag ?
+    - "See source for oracle.c at `https://pastebin.com/Y3gPNX4p`"
+
+tags:
+    - linux
+    - privesc
+    - reverse_engineering
+
+version: "0.1"

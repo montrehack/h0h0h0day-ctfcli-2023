@@ -1,0 +1,28 @@
+name: "The Box (level1)"
+author: "J3romee"
+category: privesc
+description: |
+    This is level1 of `The Box`.
+    Connect to the box via ssh at `level1@box1.j3romee.com` using the flag you found in the last level as a password.
+
+    Your goal is to find a way to get access the next user (`level2`)
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - FLAG{c6f5e994232912eebc8a8020c}
+
+hints:
+    - Is there any legit privesc mechanism ?
+    - Think harder :P What is a built in mechanism to impersonate another user ?
+    - Have you ever heard of sudo ?
+    - Have a look at the output of `sudo -l` ?
+
+tags:
+    - linux
+    - privesc
+    - easy
+
+version: "0.1"

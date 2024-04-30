@@ -1,0 +1,28 @@
+name: "The Box (level5)"
+author: "J3romee"
+category: privesc
+description: |
+    This is level5 of `The Box`.
+    Connect to the box via ssh at `level5@box1.j3romee.com` using the flag you found in the last level as password.
+
+    Your goal is to find a way to get access the next user (`level6`)
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - FLAG{f3908f294811aa50420f54084}
+
+hints:
+    - Is there any interesting files owned by the next user ?
+    - Is there any interesting processes owned by the next user ?
+    - "There is a webserver running on port `5000`"
+    - Google "LFI"
+
+tags:
+    - linux
+    - privesc
+    - web
+
+version: "0.1"

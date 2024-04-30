@@ -1,0 +1,23 @@
+name: "Single Secret Manager"
+author: "nic-lovin"
+category: web
+description: |
+    Just built a website where you can host a single secret. Pretty sure it's safe, but anyways, send a link if you found a bug.
+    
+    https://niclov.in/ssm/
+    
+    PS: only /ssm/ is in scope.
+value: 300
+type: standard
+
+flags:
+    - "FLAG-ebb6939278d49981595514355e053438"
+
+tags:
+    - web
+
+hints:
+    - "Om nom nom nom"
+
+state: visible
+version: "0.1"

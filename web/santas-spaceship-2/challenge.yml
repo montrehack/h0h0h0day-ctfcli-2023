@@ -1,0 +1,19 @@
+name: "santas-spaceship-2"
+author: "hellnia"
+category: pwn
+description: |
+  Timmy is our best elf, he knows so many things. He will not let us down. We made sure to REALLY
+  secure this. And by we, I mean... him. But he is good, they told us he was the best of the North!
+value: 250
+type: standard
+
+image: .
+
+flags:
+  - FLAG{H0h0h0-n0o0o0o0-Timmy-the-elf-will-work-more-overtime-:(}
+
+tags:
+    - pwn
+
+requirements:
+  - "santas-spaceship-1"

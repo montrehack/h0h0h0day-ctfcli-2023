@@ -1,0 +1,25 @@
+name: "The Box (level8)"
+author: "J3romee"
+category: privesc
+description: |
+    This is level8 of `The Box`.
+    Connect to the box via ssh at `level8@box1.j3romee.com` using the flag you found in the last level as a password.
+
+    Your goal is to find a way to get access the next user (`level9`)
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - FLAG{ef895a84a8e10837dde7780b7}
+
+hints:
+    - Ever heard of sudo ?
+    - How can you exploit a wildcard sudo statement ?
+
+tags:
+    - linux
+    - privesc
+
+version: "0.1"

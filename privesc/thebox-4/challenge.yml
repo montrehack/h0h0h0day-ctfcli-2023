@@ -1,0 +1,27 @@
+name: "The Box (level4)"
+author: "J3romee"
+category: privesc
+description: |
+    This is level4 of `The Box`.
+    Connect to the box via ssh at `level4@box1.j3romee.com` using the flag you found in the last level as password.
+
+    Your goal is to find a way to get access the next user (`level5`)
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - FLAG{4f54ae08425a089f0aae0fa6e}
+
+hints:
+    - Again, seems like there is a SUID binary somewhere
+    - Anything interesting in environment variables ?
+    - "See source for read_file.c at `https://pastebin.com/PPPKq3yc`"
+
+tags:
+    - linux
+    - privesc
+    - easy
+
+version: "0.1"

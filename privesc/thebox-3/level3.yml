@@ -1,0 +1,27 @@
+name: "The Box (level3)"
+author: "J3romee"
+category: privesc
+description: |
+    This is level3 of `The Box`.
+    Connect to the box via ssh at `level3@box1.j3romee.com` using the flag you found in the last level as a password.
+
+    Your goal is to find a way to get access the next user (`level4`)
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - FLAG{84f1e43fc943d14537447580d}
+
+hints:
+    - The `find` command can be useful when you are exploring
+    - There is a pretty obvious binary to be found somewhere
+    - Can you use a built-in privesc mechanism ?
+
+tags:
+    - linux
+    - privesc
+    - easy
+
+version: "0.1"

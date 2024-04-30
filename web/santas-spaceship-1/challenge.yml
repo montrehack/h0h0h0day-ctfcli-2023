@@ -1,0 +1,19 @@
+name: "santas-spaceship-1"
+author: "hellnia"
+category: web
+description: |
+  Santa upgraded his sleigh and decided to let his best elves build a remote controlled, reindeer powered spaceship.
+  This spaceship has a full fledged application giving him info in real time about his reindeer's health and hunger levels.
+  The secure elves of the North told him it's the best technology has to offer.
+  Santa hired you to verify their claim! Don't let him down, or else...
+value: 100
+type: standard
+
+image: .
+
+flags:
+    - FLAG{I-4ssure-y0u-n0b0dy-c4n-g3t-th1s-t0y!}
+
+tags:
+    - web
+

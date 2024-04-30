@@ -1,0 +1,28 @@
+name: "The Box (level2)"
+author: "J3romee"
+category: privesc
+description: |
+    This is level2 of `The Box`.
+    Connect to the box via ssh at `level2@box1.j3romee.com` using the flag you found in the last level as password.
+
+    Your goal is to find a way to get access the next user (`level3`)
+value: 1
+type: standard
+
+image: null
+
+flags:
+    - FLAG{8db86a6010012f1adb808e499}
+
+hints:
+    - "`ls --color` can sometime show you interesting things"
+    - "Ever heard of the `SUID` bit ?"
+    - "The `find` command can help you locate files that have the SUID bit set"
+    - Based on your research, what is the effect of file ownership when combined with SUID ? Which user should own the SUID binary to help you progress ?
+
+tags:
+    - linux
+    - privesc
+    - easy
+
+version: "0.1"
