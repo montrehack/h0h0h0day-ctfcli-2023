@@ -14,9 +14,6 @@ tags:
     - web
     - flask
 
-files:
-    - src/
-
 hints:
     - {
         content: "https://portswigger.net/web-security/access-control/idor",
