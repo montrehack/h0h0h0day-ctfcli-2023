@@ -1,0 +1,40 @@
+[config]
+url = https://h0h0h0day.montrehack.ca
+access_token = ctfd_a2a2be4c085f5c69b8bf158a466c01dfe8bc8d47533dbf4b99677700bf70ea72
+
+[challenges]
+web/SmallBlind = web/SmallBlind
+web/VulnWebsite/ = web/VulnWebsite/
+web/christmasTicketChallenge/ = web/christmasTicketChallenge/
+web/littlelanguagemistletoe/ = web/littlelanguagemistletoe/
+web/protecc_attacc/ = web/protecc_attacc/
+web/santa-list-without-writeup/ = web/santa-list-without-writeup/
+web/truncator/ = web/truncator/
+forensic/HiddenData = forensic/HiddenData
+shell/gateway/ = shell/gateway/
+steg/ChristmasCookies/ = steg/ChristmasCookies/
+steg/abbey_road/ = steg/abbey_road/
+crypto/proverbe/ = crypto/proverbe/
+misc/MontreEye007-1 = misc/MontreEye007-1
+misc/MontreEye007-2 = misc/MontreEye007-2
+misc/elfgpt-1 = misc/elfgpt-1
+misc/elfgpt-2 = misc/elfgpt-2
+misc/elfgpt-3 = misc/elfgpt-3
+misc/elfgpt-4 = misc/elfgpt-4
+misc/letter = misc/letter
+reverse/groscadeaumelange/ = reverse/groscadeaumelange/
+privesc/thebox-0 = privesc/thebox-0
+privesc/thebox-1 = privesc/thebox-1
+privesc/thebox-2 = privesc/thebox-2
+privesc/thebox-3 = privesc/thebox-3
+privesc/thebox-4 = privesc/thebox-4
+privesc/thebox-5 = privesc/thebox-5
+privesc/thebox-6 = privesc/thebox-6
+privesc/thebox-7 = privesc/thebox-7
+privesc/thebox-8 = privesc/thebox-8
+privesc/thebox-9 = privesc/thebox-9
+privesc/thebox-10 = privesc/thebox-10
+web/santas-spaceship-1 = web/santas-spaceship-1
+web/santas-spaceship-2 = web/santas-spaceship-2
+web/singlesecretmanager = web/singlesecretmanager
+
