@@ -1,0 +1,30 @@
+name: "Le Père Noël s'étouffe!"
+author: "Julien Robert (oneirical)"
+category: crypto
+description: |
+    Le Père Noël, pour la première fois, a reçu un cadeau - un mystérieux colis provenant d'Asie, rempli de biscuits de la bonne fortune. Or, trop habitué aux aliments mous comme la purée de canneberges
+    et les gâteaux-bûche, il a avalé tout rond son premier biscuit, incluant le proverbe à l'intérieur! Le voilà en train de tousser bruyamment, son rire caractéristique tordu par le message secret à l'intérieur.
+
+    Heureusement, un gentil crabe a laissé un morceau de code source permettant la traduction de proverbes chinois vers l'étrange langue du Pôle Nord, constituée uniquement de 'h', '0', '-', '!' et '.'
+
+    Peut-être saurez-vous effectuer la traduction dans l'autre sens?
+
+value: 100
+type: standard
+
+flags:
+    - flag{v0yage-de-m1lle-pa5-c0mmence-par-un}
+
+tags:
+    - cipher
+    - rust
+
+hints:
+    - Grâce au système ASCII, chaque caractère a un chiffre associé.
+
+files:
+    - source.zip
+    - rire.txt
+
+state: visible
+version: "0.1"

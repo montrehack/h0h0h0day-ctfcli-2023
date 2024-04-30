@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  entrypoint:
+    build:
+      context: ./entrypoint
+
+    cpus: ${ENTRYPOINT_LIMIT_CPU:-0.3}
+    mem_limit: ${ENTRYPOINT_LIMIT_MEM:-128m}
+
+    networks:
+      network:
+
+networks:
+  network:
+    driver_opts:
+      com.docker.network.bridge.name: ${BR_NAME:-lv-h0h0h0}

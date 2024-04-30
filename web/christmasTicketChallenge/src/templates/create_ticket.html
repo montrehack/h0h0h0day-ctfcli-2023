@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Christmas Tickets Create Ticket</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    {% include "header.html" %}
+    <h1>Créer un nouveau ticket</h1>
+    <p>Veuillez remplir les champs suivants pour créer un nouveau ticket.</p>
+    <div class="form-center">
+    <form method="POST" action="/create_ticket">
+        <label for="title">Titre:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="8" cols="50" required></textarea>
+        <label for="priority">Priorité:</label>
+        <select id="priority" name="priority" style="width: 100px;" required>
+            <option value="high">Haute</option>
+            <option value="medium">Moyenne</option>
+            <option value="low">Basse</option>
+        </select>
+        <input type="submit" value="Créer">
+    </form>
+    </div>
+    <p>Si vous voulez annuler la création du ticket, cliquez <a href="/dashboard">ici</a>.</p>
+    {% include "footer.html" %}
+</body>
+</html>

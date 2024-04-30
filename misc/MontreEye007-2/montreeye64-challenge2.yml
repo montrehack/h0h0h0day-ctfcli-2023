@@ -1,0 +1,19 @@
+name: "MontreEye 007 chal 2"
+author: "axdoomer"
+category: misc
+description: "There are many ways to solve this challenge. Be creative.\n\nFor this first challenge, you have to complete the "Montreal" level under 4 minutes playing on the **Secret Agent difficulty** to get the flag. The flag will be displayed on the statistics screen in red."
+value: 100
+type: standard
+
+flags:
+    - flag-kan19fmnae
+
+tags:
+    - speedrun
+
+files:
+    - MontreEye007_chal2.zip
+
+state: visible
+
+version: "0.1"

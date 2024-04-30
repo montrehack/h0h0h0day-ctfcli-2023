@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page d'inscription</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    {% include "header.html" %}
+    <h1>Page d'inscription</h1>
+    <p>Veuillez entrer votre nom d'utilisateur et votre mot de passe pour vous inscrire.</p>
+    <!-- Afficher le message d'erreur s'il y en a un -->
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+    <!-- Créer un formulaire pour les informations d'inscription -->
+    <form action="/register" method="POST">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="S'inscrire">
+    </form>
+    <p>Vous avez déjà un compte? <a href="/login">Connectez-vous ici</a>.</p>
+    {% include "footer.html" %}
+</body>
+</html>

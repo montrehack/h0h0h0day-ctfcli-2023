@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React + TS</title>
+  <style type="text/css">
+    * {
+      cursor: url(src/assets/hol278.cur), auto !important;
+    }
+  </style>
+  <script type="module">
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+    new fairyDustCursor({
+      colors: [
+        "#ff0000",
+        "#ff7878",
+        "#ffffff",
+        "#74d680",
+        "#378b29"
+      ],
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

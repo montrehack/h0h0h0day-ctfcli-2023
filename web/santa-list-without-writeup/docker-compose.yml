@@ -1,0 +1,29 @@
+version: "3"
+services:
+  envoy:
+    container_name: envoy_proxy
+    build: ./proxy
+    ports:
+      - "9901:9901"
+      - "8080:8080"
+    expose:
+      - "9901"
+      - "8080"
+    volumes:
+      - ./proxy/envoy.yaml:/etc/envoy/envoy.yaml
+    links:
+      - node_server
+  node_server:
+    container_name: node_server
+    build: ./server
+    ports:
+      - "9090:9090"
+    environment:
+      - GRPC_NODE_VERBOSITY=DEBUG
+  react_app:
+    container_name: react_app
+    build: ./app
+    ports:
+      - "8081:8081"
+networks:
+  envoymesh: {}

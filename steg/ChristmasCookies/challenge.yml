@@ -1,0 +1,11 @@
+name: ChristmasCookies
+author: "Ali31415"
+category: Steganography
+description: These cookies look delicious!
+value: 100
+
+flags:
+      - flag{this_is_a_fake_flag_right}
+
+files:
+      - cook1es.zip

@@ -1,0 +1,25 @@
+name: "Gift factory"
+author: "KptCheeseWhiz"
+category: shell
+description: |
+  Krampus contacted you and he is willing to pay big bucks to have santa's good list in advance. As an elf working minimum wage at a gift factory, it would be nice if you could pay for both your rent and food this month.
+
+  `ssh -p41337 h0h0h0@h0h0h0.monordibogue.com #password is h0h0h0`
+
+value: 100
+type: standard
+
+flags:
+  - FLAG-e20c835a9244d30f2cb51ca806af12d1
+hints:
+  - Try list what you can do as another user
+  - Do not forget to read the manual page
+
+topics:
+  - shell
+  - privesc
+
+tags:
+  - shell 
+
+version: "0.1"

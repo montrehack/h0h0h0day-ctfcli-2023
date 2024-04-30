@@ -1,0 +1,25 @@
+﻿name: "Vulnerable app"
+author: "Atlantis11656"
+category: web
+description: |
+    Hey, we found this website for BigCorp inc! We think it contains vulnerabilities. Maybe we can recover some useful information!
+
+    https://h0h0h0ctf.web.app/
+value: 100
+type: standard
+
+flags:
+    - "flag{TRY_70_S3CUR3_UR_W384PP$}"
+
+tags:
+    - Web
+
+hints:
+    - Maybe try checking the network requests?
+    - {
+        content: "Hey, have you noticed that the requests endpoint is getCollection? How about making it plural?",
+        cost: 0
+    }
+
+state: visible
+version: "0.1"

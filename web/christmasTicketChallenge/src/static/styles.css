@@ -1,0 +1,295 @@
+/* Define the main colors */
+:root {
+    --red: #ff0000;
+    --green: #00ff00;
+    --white: #ffffff;
+  }
+  
+  /* Add a snowflake background image */
+  body {
+    background-image: url("/static/images/snowflakes.png");
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .ticket {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 1px;
+    background-color: #ceeec8;
+  }
+
+/* Style du formulaire */
+form {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+/* Style des labels du formulaire */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* Style des champs de saisie du formulaire */
+input, textarea, select {
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #0e0d0d;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(223, 221, 217);
+}
+
+/* Ajout des règles pour la classe form-center */
+.form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style du bouton de soumission du formulaire */
+input[type=submit] {
+  grid-column: 2 / 3;
+  width: 100px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+  /* Use clear and concise language */
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  /* Use a candy cane font for the headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Candy Cane", cursive;
+    color: var(--red);
+    text-shadow: 2px 2px var(--white);
+  }
+  
+  /* Add some fairy lights to the header */
+  header {
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--green);
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 10px;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+  
+  .icon {
+    height: 75%;
+    width: 5%;
+    float: left;
+  }
+
+  .tree {
+    height: 70%;
+    width: 4%;
+    float: right;
+    
+  }
+
+  /* Style the navigation links */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: var(--red);
+    padding: 5px;
+  }
+  
+/* Style the navigation links */
+  nav a {
+    text-decoration: none;
+    /* Use a light color for the text */
+    color: #f1f1f1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    /* Use icons from Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+    
+    /* Add some hover effects to the links */
+    nav a:hover {
+      /* Use a lighter background color */
+      background-color: #f1f1f1;
+      /* Use a darker color for the text */
+      color: #0f2027;
+      /* Use a slide-in animation */
+      animation: slide-in 0.5s forwards;
+    }
+  
+  /* Style the list items */
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    background-color: var(--green);
+  }
+  
+  /* Add some christmas icons to the list items */
+  li::before {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Style the footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+  }
+  
+  /* Add a christmas tree to the footer */
+  footer::before {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+/* Style du conteneur des cartes */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* Style des cartes */
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  background-color: #ceeec8;
+}
+
+/* Style de l'en-tête des cartes */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Style du titre des cartes */
+.card-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Style du statut des cartes */
+.card-header .status {
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Style du statut selon la valeur */
+.card-header .status.low {
+  background-color: #0079bf;
+}
+
+.card-header .status.medium {
+  background-color: #d9b51c;
+}
+
+.card-header .status.high {
+  background-color: #61bd4f;
+}
+
+/* Style du corps des cartes */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ceeec8;
+}
+
+/* Style des paragraphes du corps des cartes */
+.card-body p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px;
+}
+/* Pour les écrans larges (plus de 992px) */
+@media screen and (min-width: 992px) {
+  .card {
+    flex-basis: 20%;
+  }
+}
+
+/* Pour les écrans étroits (moins de 992px) */
+@media screen and (max-width: 992px) {
+  .card {
+    flex-basis: 50%;
+  }
+}
+

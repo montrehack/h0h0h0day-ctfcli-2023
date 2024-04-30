@@ -1,0 +1,1 @@
+santa, elf ALL=(ALL:ALL) NOPASSWD: /bin/chmod u+rwx /home/elf/wrapped/* /home/santa/naughty.txt /home/santa/good.txt

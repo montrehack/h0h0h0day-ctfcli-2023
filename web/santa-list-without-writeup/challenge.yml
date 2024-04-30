@@ -1,0 +1,17 @@
+name: "Santa's List"
+author: "Monchou"
+category: web
+description: |
+  This year, Santa decided to ditch paper and use the power of the web to
+  track all the delivery he has to make. Using bleeding-edge technology,
+  he can not track all the children of the world from the palm of his hand.
+value: 100
+type: standard
+connection_info: http://challenges.montrehack.ca:8080/
+flags:
+  - FLAG-6rPC_15_50_53CUr3
+tags:
+  - web
+hints:
+  - "Postman v9.10.0+ can help you."
+version: "0.1"

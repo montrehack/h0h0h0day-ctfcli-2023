@@ -1,0 +1,28 @@
+name: "Christmas-tickets-challenge"
+author: "letigredununavu"
+category: web
+description: Vous avez obtenu accès au site de ticketing que les lutins utilisent pour préparer les fêtes. Il y a sûrement des informations confidentiels dans ces tickets..
+value: 100
+type: standard
+
+connection_info: http://challenges.montrehack.ca:5001/
+
+flags:
+    - FLAG-JAIHATEANOELETALABOUFFEDENOEL
+
+tags:
+    - web
+    - flask
+
+files:
+    - src/
+
+hints:
+    - {
+        content: "https://portswigger.net/web-security/access-control/idor",
+        cost: 0
+    }
+
+state: visible
+
+version: "0.1"

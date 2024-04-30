@@ -1,0 +1,21 @@
+name: "Gros Cadeau Mélangé"
+author: "niftic"
+category: reverse
+description: Les lutins gardent les gros cadeaux en petits morceaux chiffrés durant l'année pour plus de sécurité. Cependant, le réparateur semble être brisé! Sauras-tu recontruire le gros cadeau?
+value: 100
+type: standard
+
+flags:
+    - flag{hohoho_il_ne_faut_pas_avoir_peur_du_go}
+
+tags:
+    - reverse
+    - crypto
+    - go
+
+files:
+    - gros_cadeau_melange.zip
+
+state: visible
+
+version: "0.1"

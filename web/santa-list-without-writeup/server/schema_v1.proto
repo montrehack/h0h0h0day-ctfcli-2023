@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package h0h0h0;
+
+message ListEntry { 
+    string id = 1;
+    string name = 2;
+    string type = 3;
+    string gift = 4;
+    string location = 5;
+}
+
+enum EntryType {
+    NAUGHTY = 0;
+    NICE = 1;
+}
+
+message QueryResponse {
+    repeated ListEntry entries = 1;
+}
+
+/**
+ * Naughty or Nice request
+ * 
+ * @param type: returns all Entry of the given type 
+ */
+message QueryRequest {
+    EntryType type = 1;
+}
+
+/**
+ * Naughty or Nice request
+ * 
+ * @param filter: filter the returned entry
+ */
+message QueryRequest_old {
+    option deprecated = true;
+    string filter = 1;
+}
+
+service SantaList {
+    rpc GetValues (QueryRequest) returns (QueryResponse) {}
+    rpc GetValues_old (QueryRequest_old) returns (QueryResponse) {} 
+}
+

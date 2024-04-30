@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Christmas Tickets Home Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    {% include "header.html" %}
+    <h1>Bienvenue sur le site de ticketing des lutins</h1>
+    <p>Pour chaque cadeaux, lettres ou tâches à faire, svp passez par ici.</p>
+    <p>- Sincèrement, le management des lutins.</p>
+    <p>Nous avons rapidement développé différentes fonctionnalités pour rendre vos tâches plus faciles:</p>
+    <ul>
+        <li><a href="/view_tickets">Viewing tickets</a></li>
+        <li><a href="/create_ticket">Creating tickets</a></li>
+        <li><a href="/edit">Editing tickets</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+    </ul>
+    <p>Joyeux noel à tous et à toutes!</p>
+    {% include "footer.html" %}
+</body>
+</html>

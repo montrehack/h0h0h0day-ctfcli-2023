@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Christmas Tickets View Tickets</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    {% include "header.html" %}
+    <h1>Voir les tickets</h1>
+    <p>Choissisez le ticket que vous voulez modifier.</p>
+    <div class="container"> <!-- Conteneur des cartes -->
+        {% for ticket in tickets %} <!-- Boucle sur les tickets -->
+        <div class="card"> <!-- Carte d'un ticket -->
+            <div class="card-header"> <!-- En-tête de la carte -->
+                <h3>{{ ticket.title }}</h3> <!-- Titre du ticket -->
+                <span class="status {{ ticket.priority }}"> {{ ticket.priority }}</span> <!-- Statut du ticket -->
+            </div>
+            <div class="card-body"> <!-- Corps de la carte -->
+                <p>Description: {{ ticket.description }}</p> <!-- Type du ticket -->
+                <p>Priorité: {{ ticket.priority }}</p> <!-- Priorité du ticket -->
+                <p>ID: {{ ticket.id }}</p> <!-- Assigné du ticket -->
+                <p><a href="/edit_ticket/{{ ticket.id }}">Modifier</a></p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+name: Little Language Mistletoe
+author: lixtelnis
+category: web
+description: Read the flag file at /flag. http://184.73.6.228:2311/
+value: 100
+type: standard
+
+flags:
+    - flag{s3nd_1ng_a_ruby_pwes3nt_to_u}
+
+tags:
+    - web
+
+version: "0.1"

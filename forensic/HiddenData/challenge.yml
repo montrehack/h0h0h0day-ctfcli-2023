@@ -1,0 +1,26 @@
+﻿name: "Hidden data"
+author: "Atlantis11656"
+category: forensic
+description: |
+    Haha! We've managed to steal an important data file from BigCorp inc! Here's the script to recover the file. Strange, there doesn't seem to be any sensitive data in this file. There must be something hidden...
+value: 100
+type: standard
+
+flags:
+    - "flag{AD$-15-4w3s0m3-H3HEH3H4}"
+
+file:
+    - StealData.exe
+tags:
+    - Windows
+    - Forensics
+
+hints:
+    - Hmm, looks like NTFS has some hidden features...
+    - {
+        content: "Have you heard about Alternate Data Streams?",
+        cost: 0
+    }
+
+state: visible
+version: "0.1"

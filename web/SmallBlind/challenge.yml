@@ -1,0 +1,19 @@
+name: "Small Blind"
+author: "Tarik Galleze"
+category: web
+description: Failure is the First Step to Success.
+value: 500
+type: standard
+image: null
+protocol: http
+connection_info: http://challenges.montrehack.ca:8580/
+flags:
+    # A static case sensitive flag
+    - Flag{W3ll_Done_H4cker_C0nt4ct_M3_1f_y0ur_comp4ny_is_hiring}
+
+topics:
+    - Web apps
+    - blind xss
+    - information disclosure (user enum)
+tags:
+    - web

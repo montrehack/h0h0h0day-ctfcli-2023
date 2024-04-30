@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Christmas Tickets Edit Ticket</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    {% include "header.html" %}
+    <h1>Modifier un ticket existant</h1>
+    <p>Veuillez modifier les champs suivants pour mettre à jour votre ticket.</p>
+    <form method="POST" action="/edit_ticket/{{ ticket.id }}">
+        <label for="title">Titre:</label>
+        <input type="text" id="title" name="title" value="{{ ticket.title }}" required>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required>{{ ticket.description }}</textarea>
+        <label for="priority">Priorité:</label>
+        <select id="priority" name="priority" required>
+            <option value="high" {% if ticket.priority == "high" %}selected{% endif %}>Haute</option>
+            <option value="medium" {% if ticket.priority == "medium" %}selected{% endif %}>Moyenne</option>
+            <option value="low" {% if ticket.priority == "low" %}selected{% endif %}>Basse</option>
+        </select>
+        <input type="submit" value="Modifier">
+    </form>
+    <p>Si vous voulez annuler la modification du ticket, cliquez <a href="/dashboard">ici</a>.</p>
+    {% include "footer.html" %}
+</body>
+</html>

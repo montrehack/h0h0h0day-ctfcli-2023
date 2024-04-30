@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  gateway:
+    build:
+      context: ./gateway
+    container_name: gateway
+    restart: unless-stopped
+    # give it time to stop the levels
+    stop_grace_period: 5m
+    volumes:
+      - ssh_config:/etc/ssh
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./h0h0h0:/level_bases/h0h0h0:ro
+    ports:
+      - 41337:22
+    environment:
+      # in minutes
+      REAP_INTERVAL: 15
+      REAP_CUTOFF: 60
+
+      # maximum amount of levels running at the same time
+      # NOTE: if you increase this number, do not forget to increase fs.inotify.max_user_instances to ~5x higher
+      LEVEL_LIMIT_COUNT: 20
+      # uncomment the next line and restart the docker compose to enforce CTFd validation (also change the URL ;))
+      # LEVEL_CTFD_INTEGRATION: https://ctfd.example.com/
+
+      ENTRYPOINT_LIMIT_CPU: 0.3
+      ENTRYPOINT_LIMIT_MEM: 200m
+
+volumes:
+  ssh_config:

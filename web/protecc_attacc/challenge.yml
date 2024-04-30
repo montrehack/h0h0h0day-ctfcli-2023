@@ -1,0 +1,26 @@
+name: "Protecc, Attacc and Senta Conf"
+author: "Sideni"
+category: web
+description: |
+    There are so many people on the naughty list now...
+    We have to protect it because of naughty people...
+    Could you people just be nice for a little while ?
+
+value: 300
+type: standard
+
+image: null
+host: null
+
+connection_info: http://ohoh.sideni.xyz
+
+flags:
+    - flag-toctoctoc_is_it_santa?
+
+tags:
+    - web
+
+state: visible
+
+version: "0.1"
+

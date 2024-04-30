@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    {% include "header.html" %}
+    <h1>Page de connexion</h1>
+    <p>SVP, entrez vos identifiants.</p>
+    <!-- Display the error message if any -->
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+    <!-- Create a form for the login credentials -->
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Log in">
+    </form>
+    <p>Pas de compte? <a href="/register">Enregistrez-vous</a>.</p>
+    {% include "footer.html" %}
+</body>
+</html>

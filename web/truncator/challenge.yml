@@ -1,0 +1,15 @@
+name: "Truncator 2024"
+author: "becoh0"
+description: |
+  Santa has a new device to process wishlists.
+
+connection_info: http://challenges.montrehack.ca:36087
+category: web
+tags:
+  - web
+  - appsec
+image: .
+value: 200
+flags:
+  - FLAG-f6d468c4dd0d44e4a77827e556d56389ca8be401
+version: "0.1"

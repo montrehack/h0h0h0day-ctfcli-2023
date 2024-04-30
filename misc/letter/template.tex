@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage{hyperref}
+
+\definecolor{giftgreen}{RGB}{0, 128, 0}
+
+\pretitle{\begin{center}\Huge\bfseries\color{giftgreen}}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\large\color{giftgreen}}
+\postauthor{\par\end{center}\vskip 0.5em}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+$for(header-includes)$
+$header-includes$
+$endfor$
+\begin{document}
+
+\title{Dear Santa: My Gift List}
+\date{}
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+  \textit{Santa's Workshop,\\
+  North Pole, Arctic Circle}
+\end{center}
+
+$body$
+
+\end{document}
